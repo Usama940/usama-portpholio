@@ -1,22 +1,35 @@
 import { useNavigate } from "react-router-dom";
-
+import { MdDownload } from "react-icons/md";
+import cv from "../assets/Usama-resume.pdf"; // ✅ Correct import of PDF
 
 export default function Home() {
-    const navigate = useNavigate()
+    const navigate = useNavigate();
+
     return (
-        <div className="w-screen overflow-x-hidden ">
+        <div className="w-screen overflow-x-hidden">
             {/* Hero Section */}
-            <div className="flex flex-col justify-center items-center h-[28rem] bg-white ">
+            <div className="flex flex-col justify-center items-center h-[28rem] bg-white">
                 <h1 className="text-3xl font-bold text-gray-800 text-center">
                     Usama Aslam – Full Stack Developer
                 </h1>
                 <p className="text-lg text-gray-600 text-center">
                     MERN Stack | MongoDB | Express | React | Node.js
                 </p>
-                <button onClick={() => navigate("/contact")} className="mt-2 px-5 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
-                    Get Started
-                </button>
+
+                {/* ✅ Download Button */}
+                <a
+                    href={cv}
+                    download="Usama_Resume.pdf" // Optional custom filename
+                    className="mt-2 px-5 py-2 bg-blue-600 text-white rounded hover:bg-blue-800 transition inline-flex items-center gap-2"
+                >
+                    <MdDownload className="text-lg" />
+                    Download
+                </a>
             </div>
+
+
+
+
 
             {/* Services Section */}
             <div className="w-full bg-white shadow-[0_-2px_1000px_rgba(0,0,0,0.3)]  h-[20rem] flex items-center" >

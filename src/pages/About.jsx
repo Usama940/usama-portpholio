@@ -47,21 +47,21 @@ export default function About() {
 
                 <div className="flex flex-col min-[767px]:flex-row gap-6 px-4 py-8 justify-center items-center">
                     <div className="w-full min-[767px]:w-1/3 m-2">
-                        <h3 className="text-2xl text-blue-950 font-bold mt-2">💡 Expertise</h3>
+                        <h3 className="text-2xl font-semibold text-blue-950 mt-2">💡 Expertise</h3>
                         <p className='text-slate-600'>
                             Our team consists of highly skilled developers with extensive experience across various technologies and frameworks.
                         </p>
                     </div>
 
                     <div className="w-full min-[767px]:w-1/3 m-2">
-                        <h3 className="text-2xl text-blue-950 font-bold mt-2">🛠️ Customization</h3>
+                        <h3 className="text-2xl font-semibold text-blue-950 mt-2">🛠️ Customization</h3>
                         <p className='text-slate-600'>
                             We believe in tailoring each project to meet the specific needs and vision of our clients, ensuring satisfaction.
                         </p>
                     </div>
 
                     <div className="w-full min-[767px]:w-1/3 m-2">
-                        <h3 className="text-2xl text-blue-950 font-bold mt-2">🤝 Support</h3>
+                        <h3 className="text-2xl font-semibold text-blue-950 mt-2">🤝 Support</h3>
                         <p className='text-slate-600'>
                             We provide ongoing support and maintenance, ensuring your applications and websites continue to perform at their best.
                         </p>
