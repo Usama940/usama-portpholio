@@ -64,7 +64,7 @@ export default function App() {
 
           <NavLink
             to="/projects"
-            onClick={() => setIsOpen(flase)}
+            onClick={() => setIsOpen(false)}
             className={({ isActive }) =>
               isActive ? "text-indigo-400 font-bold block" : "hover:text-indigo-400 block"
             }
