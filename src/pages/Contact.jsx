@@ -29,13 +29,13 @@ export default function Contact() {
                     {/* Phone Section */}
                     <div className='mb-6'>
                         <h3 className='text-lg font-semibold text-blue-900 mb-1 text-center md:text-left tracking-wide'>Phone</h3>
-                        <p className='text-gray-700 text-center md:text-left'>03177725284</p>
+                        <p className='hover:text-black hover:text-2xl text-gray-700 text-center md:text-left'>03177725284</p>
                     </div>
 
                     {/* Email Section */}
                     <div className='mb-6'>
                         <h3 className='text-lg font-semibold text-blue-900 mb-1 text-center md:text-left tracking-wide'>Email</h3>
-                        <p className='text-gray-700 text-center md:text-left'>Usama24.2r@gmail.com</p>
+                        <p className='hover:text-black hover:text-2xl text-gray-700 text-center md:text-left'>Usama24.2r@gmail.com</p>
                     </div>
 
                     {/* Social Icons */}
@@ -63,7 +63,7 @@ export default function Contact() {
                                 </a>
                             </li>
                             <li className="hover:text-red-600 transition-colors duration-200">
-                                <a href="https://www.youtube.com/@your-channel" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.youtube.com/@mominraza0" target="_blank" rel="noopener noreferrer">
                                     <FaYoutube />
                                 </a>
                             </li>

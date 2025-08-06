@@ -36,7 +36,7 @@ export default function Footer() {
                 <div className="md:w-1/3">
                     <h2 className="text-xl font-bold text-blue-950 mb-2">Contact Info</h2>
                     <ul className="space-y-1">
-                        <li>📞 03177725284</li>
+                        <li className=' hover:text-3xl '>📞 03177725284</li>
                         <li>📍 Okara, Pakistan</li>
                     </ul>
                 </div>
