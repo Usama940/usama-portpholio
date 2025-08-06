@@ -41,9 +41,10 @@ export default function App() {
             transition-all duration-300 ease-in-out z-40 
             ${isOpen ? 'top-16' : 'top-[-300px]'}`}
         >
-          {/* ✅ NavLink with active styling */}
+
           <NavLink
             to="/"
+            onClick={() => setIsOpen(flase)}
             className={({ isActive }) =>
               isActive ? "text-indigo-400 font-bold block" : "hover:text-indigo-400 block"
             }
@@ -53,6 +54,7 @@ export default function App() {
 
           <NavLink
             to="/about"
+            onClick={() => setIsOpen(false)}
             className={({ isActive }) =>
               isActive ? "text-indigo-400 font-bold block" : "hover:text-indigo-400 block"
             }
@@ -62,6 +64,7 @@ export default function App() {
 
           <NavLink
             to="/projects"
+            onClick={() => setIsOpen(flase)}
             className={({ isActive }) =>
               isActive ? "text-indigo-400 font-bold block" : "hover:text-indigo-400 block"
             }
@@ -71,6 +74,7 @@ export default function App() {
 
           <NavLink
             to="/contact"
+            onClick={() => setIsOpen(false)}
             className={({ isActive }) =>
               isActive ? "text-indigo-400 font-bold block" : "hover:text-indigo-400 block"
             }
