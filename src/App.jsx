@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { NavLink, Outlet, useNavigate } from "react-router-dom"; // ✅ Import NavLink
-import Footer from "./Components/Footer";
+import Footer from "../pages/Footer";
 import ScroltoTop from "./pages/ScroltoTop";
 
 export default function App() {
