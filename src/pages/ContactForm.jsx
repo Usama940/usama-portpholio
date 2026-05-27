@@ -5,7 +5,7 @@ export default function ContactForm() {
 
     return (
         <div className='w-full max-w-md p-8 bg-white rounded-xl shadow-lg'>
-            <h1 className="text-3xl font-bold text-blue-900 mb-6 text-center">Contact Us</h1>
+            <h2 className="text-3xl font-bold text-blue-900 mb-6 text-center">Contact Us</h2>
 
             <div className="mb-4">
                 <label htmlFor="name" className="block text-blue-900 font-medium mb-2">Name</label>

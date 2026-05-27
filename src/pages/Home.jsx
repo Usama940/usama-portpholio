@@ -1,25 +1,64 @@
 import { useNavigate } from "react-router-dom";
 import { MdDownload } from "react-icons/md";
-import cv from "../assets/Usama-resume.pdf"; // ✅ Correct import of PDF
+import { Helmet } from "react-helmet-async";
+import { PAGES, SITE } from "../seo/meta.js";
 
 export default function Home() {
     const navigate = useNavigate();
 
     return (
-        <div className="w-screen overflow-x-hidden">
+                <>
+                <Helmet>
+                    <title>{PAGES.home.title}</title>
+                    <meta name="description" content={PAGES.home.description} />
+                    <meta name="keywords" content={PAGES.home.keywords} />
+                    <link rel="canonical" href={`${SITE.domain}${PAGES.home.path}`} />
+
+                    <meta property="og:title" content={PAGES.home.title} />
+                    <meta property="og:description" content={PAGES.home.description} />
+                    <meta property="og:type" content="website" />
+                    <meta property="og:url" content={`${SITE.domain}${PAGES.home.path}`} />
+                    <meta property="og:site_name" content="Usama Aslam Portfolio" />
+                    <meta property="og:locale" content="en_US" />
+                    <meta property="og:image" content={`${SITE.domain}${PAGES.home.image}`} />
+                    <meta property="og:image:width" content="1200" />
+                    <meta property="og:image:height" content="630" />
+
+                    <meta name="twitter:card" content="summary_large_image" />
+                    <meta name="twitter:title" content={PAGES.home.title} />
+                    <meta name="twitter:description" content={PAGES.home.description} />
+                    <meta name="twitter:image" content={`${SITE.domain}${PAGES.home.image}`} />
+                    <meta name="twitter:image:alt" content="Usama Aslam - MERN Stack Developer Portfolio" />
+
+                    <script type="application/ld+json">
+                        {JSON.stringify({
+                            "@context": "https://schema.org",
+                            "@type": "Person",
+                            name: "Usama Aslam",
+                            url: SITE.domain,
+                            jobTitle: "MERN Stack Developer",
+                            sameAs: [
+                                "https://www.linkedin.com/in/usamaaslam-pakistan",
+                                "https://www.facebook.com/share/1YXWeEdnpm/",
+                            ],
+                        })}
+                    </script>
+                </Helmet>
+
+                <div className="w-screen overflow-x-hidden">
             {/* Hero Section */}
             <div className="flex flex-col justify-center items-center h-[28rem] bg-white">
                 <h1 className="text-3xl font-bold text-gray-800 text-center">
                     Usama Aslam – Full Stack Developer
                 </h1>
                 <p className="text-lg text-gray-600 text-center">
-                    MERN Stack | MongoDB | Express | React | Node.js
+                    MERN Stack | MongoDB | Express | React | Node.js | Next.js | Tailwind CSS | Supabase
                 </p>
 
                 {/* ✅ Download Button */}
                 <a
-                    href={cv}
-                    download="Usama_Resume.pdf" // Optional custom filename
+                    href="/Mern%20stack%20developer.pdf"
+                    download="Usama_Resume.pdf"
                     className="mt-2 px-5 py-2 bg-blue-600 text-white rounded hover:bg-blue-800 transition inline-flex items-center gap-2"
                 >
                     <MdDownload className="text-lg" />
@@ -52,7 +91,7 @@ export default function Home() {
                     />
                 </div>
                 <div className='pl-0 md:pl-20 max-w-[33rem] mt-8 md:mt-0 mx-auto md:mx-0 text-center md:text-left'>
-                    <h1 className='text-2xl font-bold'>Meet Usama Aslam – Your Full Stack Developer</h1>
+                    <h2 className='text-2xl font-bold'>Meet Usama Aslam – Your Full Stack Developer</h2>
                     <p className='mt-4'>
                         As a passionate MERN Stack Developer, I focus on turning ideas into powerful digital products. From building responsive web interfaces to developing robust backend systems, I deliver full-stack solutions tailored to real business goals.
                         <br /><br />
@@ -86,5 +125,6 @@ export default function Home() {
             </div>
 
         </div>
+        </>
     );
 }

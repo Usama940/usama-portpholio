@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { NavLink, Outlet, useNavigate } from "react-router-dom"; // ✅ Import NavLink
-import Footer from "./pages/Footer";
-import ScroltoTop from "./pages/ScroltoTop";
+import Footer from "./pages/Footer.jsx";
+import ScroltoTop from "./pages/ScroltoTop.jsx";
 
 export default function App() {
   const navigate = useNavigate();
@@ -11,7 +11,7 @@ export default function App() {
     <div className="flex flex-col min-h-screen">
       <ScroltoTop />
       <nav className="fixed top-0 left-0 right-0 z-50 bg-blue-950 flex items-center justify-between py-4 px-4 shadow-md pb">
-        <h1 className="font-bold text-3xl text-white">Usama Aslam</h1>
+        <div className="font-bold text-3xl text-white">Usama Aslam</div>
 
         {/* 🔧 Hamburger icon */}
         <div className="md:hidden ">
@@ -44,7 +44,7 @@ export default function App() {
 
           <NavLink
             to="/"
-            onClick={() => setIsOpen(flase)}
+            onClick={() => setIsOpen(false)}
             className={({ isActive }) =>
               isActive ? "text-indigo-400 font-bold block" : "hover:text-indigo-400 block"
             }

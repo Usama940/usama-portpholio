@@ -1,5 +1,7 @@
 import React from 'react'
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
+import { PAGES, SITE } from "../seo/meta.js";
 
 export default function About() {
     const navigate = useNavigate();
@@ -7,8 +9,44 @@ export default function About() {
         <div>
 
             {/* Hero Section */}
+            <Helmet>
+              <title>{PAGES.about.title}</title>
+              <meta name="description" content={PAGES.about.description} />
+              <meta name="keywords" content={PAGES.about.keywords} />
+              <link rel="canonical" href={`${SITE.domain}${PAGES.about.path}`} />
+                            <meta property="og:title" content={PAGES.about.title} />
+                            <meta property="og:description" content={PAGES.about.description} />
+                            <meta property="og:type" content="website" />
+                            <meta property="og:url" content={`${SITE.domain}${PAGES.about.path}`} />
+                            <meta property="og:site_name" content="Usama Aslam Portfolio" />
+                            <meta property="og:locale" content="en_US" />
+                            <meta property="og:image" content={`${SITE.domain}${PAGES.about.image}`} />
+                            <meta property="og:image:width" content="1200" />
+                            <meta property="og:image:height" content="630" />
+                            <meta name="twitter:card" content="summary_large_image" />
+                            <meta name="twitter:title" content={PAGES.about.title} />
+                            <meta name="twitter:description" content={PAGES.about.description} />
+                            <meta name="twitter:image" content={`${SITE.domain}${PAGES.about.image}`} />
+                            <meta name="twitter:image:alt" content="About Usama Aslam" />
+                            <script type="application/ld+json">
+                                {JSON.stringify({
+                                    "@context": "https://schema.org",
+                                    "@type": "AboutPage",
+                                    name: PAGES.about.title,
+                                    url: `${SITE.domain}${PAGES.about.path}`,
+                                    mainEntity: {
+                                        "@type": "Person",
+                                        name: "Usama Aslam",
+                                        jobTitle: "MERN Stack Developer",
+                                        description: PAGES.about.description,
+                                        url: SITE.domain,
+                                    },
+                                })}
+                            </script>
+            </Helmet>
+
             <div className="bg-[url('https://interwood.pk/cdn/shop/files/Voyage1.webp?v=1753964549')] bg-cover bg-center bg-no-repeat h-[350px] w-full flex items-center justify-center">
-                <div className='text-6xl text-white justify-center text-center'>Who We Are</div>
+                <h1 className='text-6xl text-white justify-center text-center'>Who We Are</h1>
             </div>
 
             {/* About Content */}
@@ -69,7 +107,7 @@ export default function About() {
                 </div>
                 <div className="bg-[url('https://interwood.pk/cdn/shop/files/Voyage1.webp?v=1753964549')] bg-cover bg-center bg-no-repeat h-[350px] w-full flex items-center justify-center">
                     <div className=' text-white justify-center text-center'>
-                        <h1 className='text-4xl font-bold m-3'>Ready to Transform?</h1>
+                        <h2 className='text-4xl font-bold m-3'>Ready to Transform?</h2>
                         <p className='m-3'>Contact us today to discuss your project and discover how we can help you achieve your goals.</p>
                         <button onClick={() => navigate("/contact")} className="px-4 py-1 mt-2 md:mt-0 rounded bg-white text-black hover:bg-blue-700 transition">
                             Get Started

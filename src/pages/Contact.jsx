@@ -4,17 +4,56 @@ import { FaSquareInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
-import ContactForm from './ContactForm';
+import ContactForm from './ContactForm.jsx';
+import { Helmet } from "react-helmet-async";
+import { PAGES, SITE } from "../seo/meta.js";
 
 export default function Contact() {
     return (
         <div className='bg-[rgb(237,251,226)] min-h-screen py-16'>
 
             {/* Hero Section (Optional) */}
+            <Helmet>
+              <title>{PAGES.contact.title}</title>
+              <meta name="description" content={PAGES.contact.description} />
+              <meta name="keywords" content={PAGES.contact.keywords} />
+              <link rel="canonical" href={`${SITE.domain}${PAGES.contact.path}`} />
+                            <meta property="og:title" content={PAGES.contact.title} />
+                            <meta property="og:description" content={PAGES.contact.description} />
+                            <meta property="og:type" content="website" />
+                            <meta property="og:url" content={`${SITE.domain}${PAGES.contact.path}`} />
+                            <meta property="og:site_name" content="Usama Aslam Portfolio" />
+                            <meta property="og:locale" content="en_US" />
+              <meta property="og:image" content={`${SITE.domain}${PAGES.contact.image}`} />
+                            <meta property="og:image:width" content="1200" />
+                            <meta property="og:image:height" content="630" />
+                            <meta name="twitter:card" content="summary_large_image" />
+                            <meta name="twitter:title" content={PAGES.contact.title} />
+                            <meta name="twitter:description" content={PAGES.contact.description} />
+                            <meta name="twitter:image" content={`${SITE.domain}${PAGES.contact.image}`} />
+                            <meta name="twitter:image:alt" content="Contact Usama Aslam" />
+                            <script type="application/ld+json">
+                                {JSON.stringify({
+                                    "@context": "https://schema.org",
+                                    "@type": "ContactPage",
+                                    name: PAGES.contact.title,
+                                    url: `${SITE.domain}${PAGES.contact.path}`,
+                                    mainEntity: {
+                                        "@type": "Person",
+                                        name: "Usama Aslam",
+                                        jobTitle: "MERN Stack Developer",
+                                        url: SITE.domain,
+                                        email: "mailto:Usama24.2r@gmail.com",
+                                        telephone: "+923177725284",
+                                    },
+                                })}
+                            </script>
+            </Helmet>
+
             <div className="relative h-80 w-full overflow-hidden mb-12">
                 <div className="absolute inset-0 bg-[url('https://interwood.pk/cdn/shop/files/Voyage1.webp?v=1753964549')] bg-cover bg-center blur-sm"></div>
                 <div className="relative h-full flex items-center justify-center">
-                    <h2 className="text-white text-5xl font-bold z-10">Get in Touch</h2>
+                    <h1 className="text-white text-5xl font-bold z-10">Get in Touch</h1>
                 </div>
             </div>
 

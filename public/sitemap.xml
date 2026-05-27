@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://usama-resumae.netlify.app/</loc>
+    <priority>1.00</priority>
+    <lastmod>2026-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://usama-resumae.netlify.app/about</loc>
+    <priority>0.80</priority>
+    <lastmod>2026-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://usama-resumae.netlify.app/projects</loc>
+    <priority>0.80</priority>
+    <lastmod>2026-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://usama-resumae.netlify.app/contact</loc>
+    <priority>0.80</priority>
+    <lastmod>2026-05-27</lastmod>
+  </url>
+</urlset>

@@ -41,10 +41,6 @@ For that, check out the [TypeScript + Vite template](https://github.com/vitejs/v
 
 [🔗 Visit Portfolio](https://usama-resumae.netlify.app/)
 
-## 🙏 Credits
 
-Special thanks to **InvexTech** and **Momin Raza** for mentorship and support throughout the development of this portfolio.
-
----
 
 Feel free to fork, suggest improvements, or report any bugs. Feedback is always welcome! 🙌

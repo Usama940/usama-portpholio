@@ -1,8 +1,8 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
-    const navigate = useNavigate();
+    // footer uses Links for navigation; no imperative navigation required
     return (
         <footer className="bg-gray-100 text-gray-800 py-8 px-4  shadow-inner">
 
@@ -21,15 +21,9 @@ export default function Footer() {
                     <h2 className="text-xl font-bold text-blue-950 mb-2">Our Services</h2>
                     <ul className="space-y-1">
 
-                        <li
-                            onClick={() => navigate("/projects")}
-                            className=' hover:text-blue-500'> Mobile Apps</li>
-                        <li
-                            onClick={() => navigate("/projects")}
-                            className=' hover:text-blue-500'>Web Development</li>
-                        <li
-                            onClick={() => navigate("/projects")}
-                            className=' hover:text-blue-500'>Portfolio Display</li>
+                        <li className=' hover:text-blue-500'><Link to="/projects">Mobile Apps</Link></li>
+                        <li className=' hover:text-blue-500'><Link to="/projects">Web Development</Link></li>
+                        <li className=' hover:text-blue-500'><Link to="/projects">Portfolio Display</Link></li>
                     </ul>
                 </div>
 
