@@ -20,10 +20,21 @@ export default function Footer() {
                 <div className="md:w-1/3">
                     <h2 className="text-xl font-bold text-blue-950 mb-2">Our Services</h2>
                     <ul className="space-y-1">
-
                         <li className=' hover:text-blue-500'><Link to="/projects">Mobile Apps</Link></li>
                         <li className=' hover:text-blue-500'><Link to="/projects">Web Development</Link></li>
                         <li className=' hover:text-blue-500'><Link to="/projects">Portfolio Display</Link></li>
+                    </ul>
+                </div>
+
+                <div className="md:w-1/3">
+                    <h2 className="text-xl font-bold text-blue-950 mb-2">Free Tools</h2>
+                    <ul className="space-y-1">
+                        <li className="hover:text-blue-500"><Link to="/tools/pdf-compressor">PDF Compressor</Link></li>
+                        <li className="hover:text-blue-500"><Link to="/tools/image-to-pdf">Image to PDF</Link></li>
+                        <li className="hover:text-blue-500"><Link to="/tools/qr-code-generator">QR Code Generator</Link></li>
+                        <li className="hover:text-blue-500"><Link to="/tools/json-formatter">JSON Formatter</Link></li>
+                        <li className="hover:text-blue-500"><Link to="/tools/password-generator">Password Generator</Link></li>
+                        <li className="hover:text-blue-500"><Link to="/tools">All Tools →</Link></li>
                     </ul>
                 </div>
 
@@ -37,6 +48,11 @@ export default function Footer() {
             </div>
 
             <div className="mt-6 border-t pt-4 text-center text-gray-600 text-xs">
+                <div className="mb-2 flex justify-center gap-4">
+                    <Link to="/privacy" className="hover:text-blue-600">Privacy Policy</Link>
+                    <Link to="/terms" className="hover:text-blue-600">Terms of Service</Link>
+                    <Link to="/tools" className="hover:text-blue-600">Free Tools</Link>
+                </div>
                 © {new Date().getFullYear()} Usama Aslam. All rights reserved.
             </div>
         </footer>

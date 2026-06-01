@@ -1,5 +1,7 @@
-/      /index.html   200
-/about   /about/index.html   200
-/projects   /projects/index.html   200
-/contact   /contact/index.html   200
+# Netlify _redirects
+# Rule: serve prerendered static files first (Netlify does this automatically
+# when the file exists). The SPA fallback below only fires when no static
+# file matches — i.e. a route that was NOT prerendered.
+# DO NOT add explicit per-route rules here; they override static file serving.
+
 /*    /index.html   200

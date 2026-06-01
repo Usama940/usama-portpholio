@@ -2,84 +2,92 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/jpeg" href="/Dp.jpg" />
+    <!-- Favicon: use a proper PNG, not a personal photo -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Usama Aslam - MERN Stack Developer Portfolio</title>
-
+    <!-- Default title/meta — overridden per-route by react-helmet-async + prerender -->
+    <title>Usama Aslam — Full Stack Developer & MERN Stack Engineer</title>
     <meta
       name="description"
-      content="Portfolio of Usama Aslam - MERN Stack Developer specializing in MongoDB, Express, React, Node.js, and full-stack web development."
+      content="Portfolio of Usama Aslam — MERN Stack Developer (React, Node.js, MongoDB, Express) based in Pakistan. Available for freelance and full-time work."
     />
     <meta
       name="keywords"
-      content="Usama Aslam, Portfolio, MERN Stack Developer, MongoDB, Express, React, Node.js, Full Stack Developer, JavaScript, Web Development"
+      content="Usama Aslam, Full Stack Developer, MERN Stack Developer, React Developer Pakistan, Node.js Developer"
     />
     <meta name="author" content="Usama Aslam" />
-    <meta
-      name="google-site-verification"
-      content="-Wg8mAD5CLCo10Nsmt4w9BxddAX-gb3O8qCevsl3ZA4"
-    />
-    <meta
-      name="google-site-verification"
-      content="b3df_NAnM-Vn2ljZoWUA2xVhLGRkujAQtv0ypRZgjEY"
-    />
-   
 
-    <!-- Open Graph -->
-    <meta
-      property="og:title"
-      content="Usama Aslam - MERN Stack Developer Portfolio"
-    />
-    <meta
-      property="og:description"
-      content="MERN Stack Developer specializing in MongoDB, Express, React, Node.js, and full-stack web development."
-    />
+    <!-- Single verified Google Search Console property -->
+    <meta name="google-site-verification" content="b3df_NAnM-Vn2ljZoWUA2xVhLGRkujAQtv0ypRZgjEY" />
+
+    <!-- Preconnect for external image CDN used on portfolio pages -->
+    <link rel="preconnect" href="https://bairesdev.mo.cloudinary.net" />
+    <link rel="dns-prefetch" href="https://bairesdev.mo.cloudinary.net" />
+    <link rel="preconnect" href="https://interwood.pk" />
+    <link rel="dns-prefetch" href="https://interwood.pk" />
+
+    <!-- Open Graph — default (overridden per-route) -->
+    <meta property="og:title" content="Usama Aslam — Full Stack Developer & MERN Stack Engineer" />
+    <meta property="og:description" content="MERN Stack Developer from Pakistan. React, Node.js, MongoDB, Express. Available for hire." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://usama-resumae.netlify.app/" />
-    <meta property="og:image" content="/og/home.svg" />
+    <meta property="og:image" content="https://usama-resumae.netlify.app/og/home.png" />
+    <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Usama Aslam Portfolio" />
+    <meta property="og:locale" content="en_US" />
 
-    <!-- Twitter Card -->
+    <!-- Twitter Card — default -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Usama Aslam - MERN Stack Developer Portfolio"
-    />
-    <meta
-      name="twitter:description"
-      content="MERN Stack Developer specializing in MongoDB, Express, React, Node.js, and full-stack web development."
-    />
+    <meta name="twitter:title" content="Usama Aslam — Full Stack Developer & MERN Stack Engineer" />
+    <meta name="twitter:description" content="MERN Stack Developer from Pakistan. React, Node.js, MongoDB, Express." />
+    <meta name="twitter:image" content="https://usama-resumae.netlify.app/og/home.png" />
+    <meta name="twitter:image:alt" content="Usama Aslam — Full Stack Developer Portfolio" />
 
-    <!-- JSON-LD Structured Data -->
+    <!-- Person schema — site-wide identity signal -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Usama Aslam",
-        "url": "https://usama-resumae.netlify.app/",
-        "jobTitle": "MERN Stack Developer",
-        "worksFor": {
-          "@type": "Organization",
-          "name": "Freelance"
-        },
+        "url": "https://usama-resumae.netlify.app",
+        "jobTitle": "Full Stack Developer",
+        "description": "MERN Stack Developer specializing in React, Node.js, MongoDB, and Express. Based in Okara, Punjab, Pakistan.",
+        "image": "https://usama-resumae.netlify.app/Dp.jpg",
         "email": "mailto:usama24.2r@gmail.com",
         "telephone": "+923177725284",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Okara",
           "addressRegion": "Punjab",
-          "addressCountry": "Pakistan"
+          "addressCountry": "PK"
         },
-        "knowsAbout": [
-          "MongoDB",
-          "Express.js",
-          "React",
-          "Node.js",
-          "JavaScript",
-          "Full Stack Development"
-        ]
+        "sameAs": [
+          "https://www.linkedin.com/in/usamaaslam-pakistan",
+          "https://github.com/usama-aslam",
+          "https://www.facebook.com/share/1YXWeEdnpm/",
+          "https://www.instagram.com/chusamasangoka/"
+        ],
+        "knowsAbout": ["MongoDB", "Express.js", "React", "Node.js", "JavaScript", "TypeScript", "Tailwind CSS", "Next.js"]
+      }
+    </script>
+
+    <!-- Organization schema for the tools platform -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Usama Aslam Tools",
+        "url": "https://usama-resumae.netlify.app/tools",
+        "description": "Free browser-based utility tools by Usama Aslam for PDF processing, image editing, QR code generation, JSON formatting, and password generation.",
+        "founder": {
+          "@type": "Person",
+          "name": "Usama Aslam",
+          "url": "https://usama-resumae.netlify.app"
+        }
       }
     </script>
   </head>
