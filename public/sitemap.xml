@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://usama-resumae.netlify.app/</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.00</priority>
-    <lastmod>2026-06-15</lastmod>
     <image:image>
       <image:loc>https://usama-resumae.netlify.app/og/home.png</image:loc>
-      <image:title>Usama Aslam — Full Stack Developer & MERN Stack Engineer</image:title>
+      <image:title>Usama Aslam — Full Stack Developer &amp; MERN Stack Engineer</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://usama-resumae.netlify.app/about</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.80</priority>
-    <lastmod>2026-06-15</lastmod>
     <image:image>
       <image:loc>https://usama-resumae.netlify.app/og/about.png</image:loc>
       <image:title>About Usama Aslam — MERN Stack Developer from Pakistan</image:title>
@@ -21,17 +24,19 @@
   </url>
   <url>
     <loc>https://usama-resumae.netlify.app/projects</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.80</priority>
-    <lastmod>2026-06-15</lastmod>
     <image:image>
       <image:loc>https://usama-resumae.netlify.app/og/projects.png</image:loc>
-      <image:title>Projects by Usama Aslam — React & MERN Stack Portfolio</image:title>
+      <image:title>Projects by Usama Aslam — React &amp; MERN Stack Portfolio</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://usama-resumae.netlify.app/contact</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.80</priority>
-    <lastmod>2026-06-15</lastmod>
     <image:image>
       <image:loc>https://usama-resumae.netlify.app/og/contact.png</image:loc>
       <image:title>Contact Usama Aslam — Hire a MERN Stack Developer</image:title>
@@ -39,53 +44,59 @@
   </url>
   <url>
     <loc>https://usama-resumae.netlify.app/tools</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <lastmod>2026-06-15</lastmod>
     <image:image>
       <image:loc>https://usama-resumae.netlify.app/og/tools.png</image:loc>
-      <image:title>Free Browser Tools — PDF, Image, QR Code & More | Usama Aslam</image:title>
+      <image:title>Free Browser Tools — PDF, Image, QR Code &amp; More | Usama Aslam</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://usama-resumae.netlify.app/tools/pdf-tools</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.82</priority>
-    <lastmod>2026-06-15</lastmod>
     <image:image>
       <image:loc>https://usama-resumae.netlify.app/og/pdf-tools.png</image:loc>
-      <image:title>Free Online PDF Tools — Compress, Merge, Split & Convert</image:title>
+      <image:title>Free Online PDF Tools — Compress, Merge, Split &amp; Convert</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://usama-resumae.netlify.app/tools/image-tools</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.82</priority>
-    <lastmod>2026-06-15</lastmod>
     <image:image>
       <image:loc>https://usama-resumae.netlify.app/og/image-tools.png</image:loc>
-      <image:title>Free Online Image Tools — Compress & Resize Images</image:title>
+      <image:title>Free Online Image Tools — Compress &amp; Resize Images</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://usama-resumae.netlify.app/tools/text-tools</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.82</priority>
-    <lastmod>2026-06-15</lastmod>
     <image:image>
       <image:loc>https://usama-resumae.netlify.app/og/text-tools.png</image:loc>
-      <image:title>Free Online Text Tools — JSON Formatter & Text Utilities</image:title>
+      <image:title>Free Online Text Tools — JSON Formatter &amp; Text Utilities</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://usama-resumae.netlify.app/tools/dev-tools</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.82</priority>
-    <lastmod>2026-06-15</lastmod>
     <image:image>
       <image:loc>https://usama-resumae.netlify.app/og/dev-tools.png</image:loc>
-      <image:title>Free Developer Tools — QR Code & Password Generator</image:title>
+      <image:title>Free Developer Tools — QR Code &amp; Password Generator</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://usama-resumae.netlify.app/tools/image-to-pdf</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.75</priority>
-    <lastmod>2026-06-15</lastmod>
     <image:image>
       <image:loc>https://usama-resumae.netlify.app/og/image-to-pdf.png</image:loc>
       <image:title>Image to PDF — Free Online Tool | Usama Aslam</image:title>
@@ -93,8 +104,9 @@
   </url>
   <url>
     <loc>https://usama-resumae.netlify.app/tools/pdf-compressor</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.75</priority>
-    <lastmod>2026-06-15</lastmod>
     <image:image>
       <image:loc>https://usama-resumae.netlify.app/og/pdf-compressor.png</image:loc>
       <image:title>PDF Compressor — Free Online Tool | Usama Aslam</image:title>
@@ -102,8 +114,9 @@
   </url>
   <url>
     <loc>https://usama-resumae.netlify.app/tools/pdf-merger</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.75</priority>
-    <lastmod>2026-06-15</lastmod>
     <image:image>
       <image:loc>https://usama-resumae.netlify.app/og/pdf-merger.png</image:loc>
       <image:title>PDF Merger — Free Online Tool | Usama Aslam</image:title>
@@ -111,8 +124,9 @@
   </url>
   <url>
     <loc>https://usama-resumae.netlify.app/tools/pdf-splitter</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.75</priority>
-    <lastmod>2026-06-15</lastmod>
     <image:image>
       <image:loc>https://usama-resumae.netlify.app/og/pdf-splitter.png</image:loc>
       <image:title>PDF Splitter — Free Online Tool | Usama Aslam</image:title>
@@ -120,8 +134,9 @@
   </url>
   <url>
     <loc>https://usama-resumae.netlify.app/tools/word-to-pdf</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.75</priority>
-    <lastmod>2026-06-15</lastmod>
     <image:image>
       <image:loc>https://usama-resumae.netlify.app/og/word-to-pdf.png</image:loc>
       <image:title>Word to PDF — Free Online Tool | Usama Aslam</image:title>
@@ -129,8 +144,9 @@
   </url>
   <url>
     <loc>https://usama-resumae.netlify.app/tools/image-compressor</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.75</priority>
-    <lastmod>2026-06-15</lastmod>
     <image:image>
       <image:loc>https://usama-resumae.netlify.app/og/image-compressor.png</image:loc>
       <image:title>Image Compressor — Free Online Tool | Usama Aslam</image:title>
@@ -138,8 +154,9 @@
   </url>
   <url>
     <loc>https://usama-resumae.netlify.app/tools/image-resizer</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.75</priority>
-    <lastmod>2026-06-15</lastmod>
     <image:image>
       <image:loc>https://usama-resumae.netlify.app/og/image-resizer.png</image:loc>
       <image:title>Image Resizer — Free Online Tool | Usama Aslam</image:title>
@@ -147,8 +164,9 @@
   </url>
   <url>
     <loc>https://usama-resumae.netlify.app/tools/qr-code-generator</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.75</priority>
-    <lastmod>2026-06-15</lastmod>
     <image:image>
       <image:loc>https://usama-resumae.netlify.app/og/qr-code-generator.png</image:loc>
       <image:title>QR Code Generator — Free Online Tool | Usama Aslam</image:title>
@@ -156,8 +174,9 @@
   </url>
   <url>
     <loc>https://usama-resumae.netlify.app/tools/json-formatter</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.75</priority>
-    <lastmod>2026-06-15</lastmod>
     <image:image>
       <image:loc>https://usama-resumae.netlify.app/og/json-formatter.png</image:loc>
       <image:title>JSON Formatter — Free Online Tool | Usama Aslam</image:title>
@@ -165,8 +184,9 @@
   </url>
   <url>
     <loc>https://usama-resumae.netlify.app/tools/password-generator</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.75</priority>
-    <lastmod>2026-06-15</lastmod>
     <image:image>
       <image:loc>https://usama-resumae.netlify.app/og/password-generator.png</image:loc>
       <image:title>Password Generator — Free Online Tool | Usama Aslam</image:title>
